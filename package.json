@@ -1,5 +1,5 @@
 {
-  "name": "irori",
+  "name": "akiya_kaitori",
   "version": "1.0.0",
   "description": "Original WP Themes Template",
   "private": true,
@@ -16,32 +16,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LAMP-Develop/irori.git"
+    "url": "git+https://github.com/Anyushu/akiya_kaitori.git"
   },
-  "author": "LAMP",
+  "author": "Anyushu",
   "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "imagemin": "^7.0.1",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.0.0",
+    "imagemin-svgo": "^7.1.0",
     "mini-css-extract-plugin": "^0.8.2",
     "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.2",
-    "terser-webpack-plugin": "^2.3.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }

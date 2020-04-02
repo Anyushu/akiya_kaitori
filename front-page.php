@@ -16,7 +16,7 @@ get_header(); ?>
       <p class="text-light">text-light</p>
       <p class="text-dark">text-dark</p>
     </div>
-    <div class="mb-5">
+    <div class="mb-5">˝
       <h2>ボタン一覧</h2>
       <div class="mb-3">
         <button class="mr-2 btn btn-primary">text-primary</button>
