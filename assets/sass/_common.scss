@@ -2,3 +2,77 @@ body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", Helvetica, sans-serif;
   font-weight: 500;
 }
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: $font-size-sm;
+  line-height: 1.8;
+  color: #000000;
+}
+
+mark {
+  background: linear-gradient(transparent 65%, #ffd269 65%);
+}
+
+.btn {
+  &-primary {
+    border-radius: 5rem;
+    background-color: #6eacdc;
+    border: 0;
+    border-bottom: solid 2px #0f5587;
+    font-size: 18px;
+    line-height: 1;
+    padding: 1em 2em;
+    text-align: center;
+
+    &--point {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 0.5em;
+    }
+
+    &--txt {
+      font-weight: bold;
+    }
+  }
+
+  &-outline-primary {
+    position: relative;
+    border-radius: 5rem;
+    font-size: $font-size-sm;
+    line-height: 1;
+    padding: 0.875em 1em;
+    font-weight: bold;
+    border: solid 2px $primary;
+    border-bottom: solid 3px $primary;
+
+    &::after {
+      content: "▶";
+      font-size: 0.7em;
+      margin-left: 2em;
+      line-height: 1.3;
+    }
+  }
+}
+
+.bg-square {
+  background-image: url("../images/bg_reason.png");
+}
+
+.sec {
+  padding: 60px 0;
+}
+
+.ttl__h2 {
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  &--link {
+    float: right;
+  }
+}

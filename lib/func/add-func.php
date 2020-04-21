@@ -19,3 +19,18 @@ function customize_manage_posts_custom_column($column_name, $post_id)
     }
 }
 add_action('manage_posts_custom_column', 'customize_manage_posts_custom_column', 10, 2);
+
+// home_url
+function e_home_url() {
+    echo esc_url(home_url());
+}
+
+// wp_url
+function e_wp_url() {
+    echo get_template_directory_uri();
+}
+
+// wp_imgs_url
+function e_img_url() {
+    echo get_template_directory_uri().'/lib/images';
+}
