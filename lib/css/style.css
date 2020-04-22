@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #6eacdc;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -7188,6 +7188,9 @@ mark {
 .bg-square {
   background-image: url("../images/bg_reason.png"); }
 
+.bg-square-blue {
+  background-image: url("../images/bg_faq.png"); }
+
 .sec {
   padding: 60px 0; }
 
@@ -7249,6 +7252,28 @@ mark {
         .header__nav ul li a {
           display: block;
           color: #3c3c3c; }
+
+.footer__inner__link {
+  margin: 2rem 0 0;
+  padding: 0; }
+  .footer__inner__link li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5rem 0.5rem; }
+    .footer__inner__link li a {
+      display: block;
+      font-size: 0.875rem;
+      color: #000; }
+      .footer__inner__link li a::before {
+        content: "▶";
+        margin-right: 0.3rem;
+        font-size: 10px; }
+
+.to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem; }
 
 .support {
   text-align: center;
@@ -7331,4 +7356,188 @@ mark {
       margin-bottom: 1rem; }
       .target__list__inner--h3 mark {
         color: #2d82bf; }
+
+.reason__list {
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 3rem; }
+  .reason__list__inner {
+    position: relative;
+    width: 32%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: solid 1px #c8c8c8;
+    margin: 0 0 2%;
+    padding-bottom: 1.5rem; }
+    .reason__list__inner--h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #2d82bf;
+      box-sizing: border-box;
+      margin: 1.5em 0;
+      padding: 0 1.5rem; }
+    .reason__list__inner--p {
+      font-size: 0.875rem;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 1.5rem; }
+
+.works {
+  background-image: url("../images/bg_works.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .works__list {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 3rem 0; }
+    .works__list__inner {
+      width: 23%;
+      border-radius: 0.5rem;
+      border-bottom: solid 5px #fae6c3;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 1rem; }
+      .works__list__inner__txt {
+        margin-top: 1.5rem; }
+        .works__list__inner__txt--h3 {
+          color: #2d82bf;
+          font-size: 1.1rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem; }
+        .works__list__inner__txt__table {
+          width: 100%;
+          border-collapse: collapse; }
+          .works__list__inner__txt__table th,
+          .works__list__inner__txt__table td {
+            font-size: 0.875rem;
+            font-weight: normal;
+            color: #000;
+            box-sizing: border-box; }
+          .works__list__inner__txt__table th {
+            border-right: dashed 1px #c8c8c8;
+            padding-right: 1rem; }
+          .works__list__inner__txt__table td {
+            padding-left: 1rem; }
+          .works__list__inner__txt__table--price {
+            font-weight: bold;
+            font-size: 1.2rem; }
+
+.flow__list {
+  z-index: 1;
+  position: relative;
+  margin-top: 3rem;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  .flow__list--border {
+    z-index: -1;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%); }
+  .flow__list__inner {
+    width: 23%;
+    border-radius: 0.5rem;
+    border-bottom: solid 5px #6eacdc;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 4%; }
+    .flow__list__inner__txt {
+      margin-top: 1.5rem; }
+      .flow__list__inner__txt--ribbon {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: #2d82bf;
+        color: #fff;
+        padding: 0 1.3rem 0 0.5rem;
+        font-size: 12px; }
+        .flow__list__inner__txt--ribbon::after {
+          position: absolute;
+          content: "";
+          width: 0px;
+          height: 0px;
+          z-index: 1; }
+        .flow__list__inner__txt--ribbon::after {
+          top: 0;
+          right: 0;
+          border-width: 14px 12px 14px 0px;
+          border-color: transparent #fff transparent transparent;
+          border-style: solid; }
+        .flow__list__inner__txt--ribbon span {
+          font-size: 1.2rem; }
+      .flow__list__inner__txt--h3 {
+        color: #2d82bf;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 1rem 0; }
+
+.faq__list {
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  overflow-y: scroll;
+  max-height: 630px; }
+  .faq__list__inner {
+    display: block;
+    margin: 0;
+    padding: 2rem;
+    border-bottom: solid 1px #c8c8c8; }
+    .faq__list__inner:first-child {
+      padding-top: 0; }
+    .faq__list__inner:nth-child(2n) {
+      background-color: #ebf5ff; }
+    .faq__list__inner--dt {
+      color: #2d82bf;
+      font-size: 1.1rem;
+      box-sizing: border-box;
+      margin: 0 0 1em;
+      text-indent: -2em;
+      padding-left: 2em; }
+      .faq__list__inner--dt::before {
+        content: "Q.";
+        font-size: 1.2rem;
+        margin-right: 0.5em;
+        font-weight: bold; }
+    .faq__list__inner--dd {
+      color: #000;
+      font-size: 0.875rem;
+      box-sizing: border-box;
+      margin: 0;
+      text-indent: -2em;
+      padding-left: 2em; }
+      .faq__list__inner--dd::before {
+        content: "A.";
+        font-size: 1.2rem;
+        margin-right: 0.5em;
+        font-weight: bold;
+        color: #eb2827; }
+
+.area {
+  background-color: #fff9ea; }
+  .area__inner {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .area__inner__txt {
+      width: 65%;
+      margin-left: 5%; }
+      .area__inner__txt__list {
+        border: solid 5px #ffd269;
+        box-sizing: border-box;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background-color: #fff; }
+
+.message {
+  background-image: url("../images/bg_message.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
