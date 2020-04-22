@@ -86,3 +86,45 @@ mark {
     float: right;
   }
 }
+
+.ttl__h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: $primary;
+  letter-spacing: 0.1rem;
+  line-height: 1.3em;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: text-bottom;
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    background-color: $info;
+    border: solid 3px $primary;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+}
+
+.table {
+  th {
+    white-space: nowrap;
+    font-weight: bold;
+    color: $primary;
+    background-color: $info;
+    font-size: 1rem;
+    padding: 1.8rem;
+    vertical-align: middle;
+    border-top: solid 1px #c8c8c8;
+    border-bottom: solid 1px #c8c8c8;
+  }
+  td {
+    font-size: $font-size-sm;
+    padding: 1.8rem;
+    vertical-align: middle;
+    border-top: solid 1px #c8c8c8;
+    border-bottom: solid 1px #c8c8c8;
+  }
+}

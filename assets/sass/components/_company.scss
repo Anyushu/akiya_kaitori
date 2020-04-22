@@ -1,0 +1,25 @@
+.staff {
+  &__list {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    &__inner {
+      width: 24%;
+      border-radius: .5rem;
+      background-color: $info;
+      border-bottom: solid 5px $blue;
+      box-sizing: border-box;
+      padding: 1rem;
+      &--h3 {
+        font-size: 1.1rem;
+        color: $primary;
+        margin: 1rem 0;
+        font-weight: bold;
+      }
+      &--p {
+        margin-bottom: 0;
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}
