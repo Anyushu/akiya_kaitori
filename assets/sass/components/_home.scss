@@ -11,29 +11,54 @@
 .contact {
   overflow: hidden;
   text-align: center;
-  background-image: url("../images/bg_contact.png");
+  background-image: url("../images/bg_contact_pc.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include media-breakpoint-down(md) {
+    background-image: url("../images/bg_contact_sp.png");
+  }
 
   .container {
     z-index: 1;
     box-sizing: border-box;
     padding-top: 3rem;
     padding-bottom: 3.8rem;
+    @include media-breakpoint-down(md) {
+      padding-top: 1rem;
+    }
   }
 
   &__h {
     margin-bottom: 2rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__link {
     display: flex;
     justify-content: start;
     align-items: center;
+    @include media-breakpoint-down(md) {
+      position: relative;
+      flex-wrap: wrap;
+      top: 1.5rem;
+    }
 
     a {
       display: block;
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+        width: 28%;
+        margin-right: 2%;
+      }
+      &:last-child {
+        @include media-breakpoint-down(md) {
+          width: 66%;
+          margin-top: 2%;
+        }
+      }
     }
   }
 
@@ -42,6 +67,11 @@
     position: absolute;
     left: -1.5rem;
     bottom: 0;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      left: auto;
+      right: 0;
+    }
   }
 }
 
@@ -82,7 +112,9 @@
       border-radius: 0.5rem;
       padding: 1.5rem 1rem;
       @include media-breakpoint-down(md) {
-        width: 100%;
+        padding: 1rem 0.875rem;
+        width: 49%;
+        margin-bottom: 4%;
       }
 
       &--pin {
@@ -100,8 +132,17 @@
         font-weight: bold;
         color: $primary;
         margin-bottom: 1rem;
+        @include media-breakpoint-down(md) {
+          font-size: $font-size-sm;
+        }
         mark {
           color: $primary;
+        }
+      }
+
+      &--p {
+        @include media-breakpoint-down(md) {
+          font-size: 0.7rem;
         }
       }
     }
@@ -114,6 +155,49 @@
     align-items: stretch;
     flex-wrap: wrap;
     margin-top: 3rem;
+    @include media-breakpoint-down(md) {
+      box-sizing: border-box;
+      padding: 0 2rem;
+      margin: 2rem 0 0 !important;
+    }
+
+    .slick-prev-img,
+    .slick-next-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.5rem;
+      height: auto;
+    }
+
+    .slick-prev-img {
+      left: 0;
+    }
+
+    .slick-next-img {
+      right: 0;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+      color: $primary;
+    }
+
+    .slick-dots {
+      position: static;
+
+      li {
+        width: auto;
+        height: auto;
+        button {
+          width: auto;
+          height: auto;
+          &::before {
+            color: $primary;
+          }
+        }
+      }
+    }
 
     &__inner {
       position: relative;
@@ -123,6 +207,10 @@
       border: solid 1px #c8c8c8;
       margin: 0 0 2%;
       padding-bottom: 1.5rem;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin: 0;
+      }
 
       &--h3 {
         font-size: 1.1rem;
@@ -154,6 +242,9 @@
     align-items: stretch;
     flex-wrap: wrap;
     margin: 3rem 0;
+    @include media-breakpoint-down(md) {
+      margin: 1.5rem 0;
+    }
 
     &__inner {
       width: 23%;
@@ -162,15 +253,26 @@
       background-color: $white;
       box-sizing: border-box;
       padding: 1rem;
+      @include media-breakpoint-down(md) {
+        width: 49%;
+        margin-bottom: 2%;
+      }
 
       &__txt {
         margin-top: 1.5rem;
+        @include media-breakpoint-down(md) {
+          margin-top: 1rem;
+        }
 
         &--h3 {
           color: $primary;
           font-size: 1.1rem;
           font-weight: bold;
           margin-bottom: 1.5rem;
+          @include media-breakpoint-down(md) {
+            font-size: $font-size-sm;
+            margin-bottom: 1rem;
+          }
         }
 
         &__table {
@@ -183,20 +285,33 @@
             font-weight: normal;
             color: $black;
             box-sizing: border-box;
+            word-break: break-all;
+            @include media-breakpoint-down(md) {
+              font-size: 0.7rem;
+            }
           }
 
           th {
             border-right: dashed 1px #c8c8c8;
             padding-right: 1rem;
+            @include media-breakpoint-down(md) {
+              padding-right: 0.5rem;
+            }
           }
 
           td {
             padding-left: 1rem;
+            @include media-breakpoint-down(md) {
+              padding-left: 0.5rem;
+            }
           }
 
           &--price {
             font-weight: bold;
             font-size: 1.2rem;
+            @include media-breakpoint-down(md) {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -212,12 +327,18 @@
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
+    @include media-breakpoint-down(md) {
+      margin-top: 1.5rem;
+    }
     &--border {
       z-index: -1;
       position: absolute;
       top: 25%;
       left: 50%;
       transform: translateX(-50%);
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
     &__inner {
       width: 23%;
@@ -227,8 +348,26 @@
       box-sizing: border-box;
       padding: 1rem;
       margin-bottom: 4%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-bottom: 2%;
+      }
+      img {
+        @include media-breakpoint-down(md) {
+          display: inline-block;
+          vertical-align: top;
+          width: 35% !important;
+        }
+      }
       &__txt {
         margin-top: 1.5rem;
+        @include media-breakpoint-down(md) {
+          display: inline-block;
+          vertical-align: top;
+          width: 59%;
+          margin-left: 4%;
+          margin-top: 0;
+        }
         &--ribbon {
           position: relative;
           display: inline-block;
@@ -260,6 +399,13 @@
           font-size: 1.1rem;
           font-weight: bold;
           margin: 1rem 0;
+          @include media-breakpoint-down(md) {
+            font-size: $font-size-sm;
+            margin: 0.5rem 0;
+          }
+        }
+        p {
+          font-size: 0.7rem;
         }
       }
     }
@@ -267,6 +413,13 @@
 }
 
 .faq {
+  .ttl__h2 {
+    img {
+      @include media-breakpoint-down(md) {
+        width: 150px;
+      }
+    }
+  }
   &__list {
     margin-top: 3rem;
     background-color: $white;
@@ -275,11 +428,19 @@
     padding: 2rem;
     overflow-y: scroll;
     max-height: 630px;
+    @include media-breakpoint-down(md) {
+      margin-top: 1.5rem;
+      max-height: 400px;
+      padding: 1rem;
+    }
     &__inner {
       display: block;
       margin: 0;
       padding: 2rem;
       border-bottom: solid 1px #c8c8c8;
+      @include media-breakpoint-down(md) {
+        padding: 1rem;
+      }
       &:first-child {
         padding-top: 0;
       }
@@ -293,11 +454,18 @@
         margin: 0 0 1em;
         text-indent: -2em;
         padding-left: 2em;
+        @include media-breakpoint-down(md) {
+          font-size: $font-size-sm;
+          margin: 0 0 0.8em;
+        }
         &::before {
           content: "Q.";
           font-size: 1.2rem;
           margin-right: 0.5em;
           font-weight: bold;
+          @include media-breakpoint-down(md) {
+            font-size: $font-size-sm;
+          }
         }
       }
       &--dd {
@@ -307,12 +475,18 @@
         margin: 0;
         text-indent: -2em;
         padding-left: 2em;
+        @include media-breakpoint-down(md) {
+          font-size: 0.7rem;
+        }
         &::before {
           content: "A.";
           font-size: 1.2rem;
           margin-right: 0.5em;
           font-weight: bold;
           color: #eb2827;
+          @include media-breakpoint-down(md) {
+            font-size: $font-size-sm;
+          }
         }
       }
     }
@@ -321,6 +495,11 @@
 
 .area {
   background-color: #fff9ea;
+  .container {
+    @include media-breakpoint-down(md) {
+      width: 85%;
+    }
+  }
   &__inner {
     justify-content: center;
     align-items: center;
@@ -328,6 +507,11 @@
     &__txt {
       width: 65%;
       margin-left: 5%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+      }
       &__list {
         border: solid 5px #ffd269;
         box-sizing: border-box;
@@ -340,8 +524,11 @@
 }
 
 .message {
-  background-image: url("../images/bg_message.png");
+  background-image: url("../images/bg_message_pc.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  @include media-breakpoint-down(md) {
+    background-image: url("../images/bg_message_sp.png");
+  }
 }

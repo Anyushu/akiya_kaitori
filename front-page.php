@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 <div class="mv">
-<img class="w-100" src="<?php e_img_url(); ?>/mv_pc.png" srcset="<?php e_img_url(); ?>/mv_pc.png 1x, <?php e_img_url(); ?>/mv_pc@2x.png 2x" alt="訳あり物件を現状のまま買い取ります！">
+<img class="w-100 img-switch img-switch" src="<?php e_img_url(); ?>/mv_pc.png" alt="訳あり物件を現状のまま買い取ります！">
 </div>
 <!-- mv -->
 
 <div class="support">
 <div class="container">
-<img class="img-fluid support--img" src="<?php e_img_url(); ?>/support_txt.png" alt="相続、空き家売却に伴う税金の問題、認知症対策などもサポートします！まるごとお任せください！">
+<img class="img-fluid support--img img-switch" src="<?php e_img_url(); ?>/support_txt_pc.png" alt="相続、空き家売却に伴う税金の問題、認知症対策などもサポートします！まるごとお任せください！">
 </div>
 </div>
 
@@ -49,15 +49,15 @@ $cat_name = $categories[0]->name;
 <?php endforeach; wp_reset_postdata(); ?>
 </ul>
 </div>
-<div class="col-md text-center">
-<div class="mb-3">
+<div class="col-md text-center d-md-block d-flex">
+<div class="mb-md-3 mr-md-0 mr-2">
 <a href="<?php e_home_url(); ?>/works/">
-<img class="img-fluid" src="<?php e_img_url(); ?>/btn_works.png" alt="実績">
+<img class="img-fluid img-switch" src="<?php e_img_url(); ?>/btn_works_pc.png" alt="実績">
 </a>
 </div>
 <div>
 <a href="#00ff00">
-<img class="img-fluid" src="<?php e_img_url(); ?>/btn_area.png" alt="対応エリア">
+<img class="img-fluid img-switch" src="<?php e_img_url(); ?>/btn_area_pc.png" alt="対応エリア">
 </a>
 </div>
 </div>
@@ -70,7 +70,7 @@ $cat_name = $categories[0]->name;
 <section class="sec target bg-info">
 <div class="container">
 <h2 class="ttl__h2 text-center">
-<img class="img-fluid" src="<?php e_img_url(); ?>/h_target.png" alt="このような空き家でも買い取ることが可能です！まずはお気軽にご相談ください！">
+<img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_target_pc.png" alt="このような空き家でも買い取ることが可能です！まずはお気軽にご相談ください！">
 </h2>
 <p class="text-center">大阪の空き家買取は「空き家買取屋さん」にお任せください。
 <br>空き家の高価買い取り、無料査定、そして売却相談までお気軽にお問い合わせください。
@@ -117,12 +117,12 @@ $cat_name = $categories[0]->name;
 <section class="sec reason bg-square">
 <div class="container">
 <h2 class="ttl__h2 text-center">
-<img class="img-fluid" src="<?php e_img_url(); ?>/h_reason.png" alt="選ばれる12の理由">
+<img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_reason_pc.png" alt="選ばれる12の理由">
 </h2>
 <p class="text-center">大阪府下にある空き家を専門に買い取っている当社はなぜたくさんのお客様から支持されるのか。
 <br>なぜ他社ではなく当社を選ぶのか。その理由をまとめましたので、ご紹介いたします。</p>
 
-<div class="reason__list d-flex">
+<div class="reason__list d-md-flex">
 <div class="reason__list__inner">
 <img class="w-100" src="<?php e_img_url(); ?>/reason_img_1.png" alt="あんしんの無料査定">
 <h3 class="reason__list__inner--h3 text-center">あんしんの無料査定</h3>
@@ -192,7 +192,7 @@ $cat_name = $categories[0]->name;
 
 <section class="sec works bg-works">
 <div class="container">
-<h2 class="ttl__h2 text-center"><img src="<?php e_img_url(); ?>/h_works.png" alt="高価買取・即日現金化の実績をご紹介します"></h2>
+<h2 class="ttl__h2 text-center"><img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_works_pc.png" alt="高価買取・即日現金化の実績をご紹介します"></h2>
 <p class="text-center">大阪府下の高価買取実績とこちらに掲載している実績は即日現金化したものを集めたものになります。</p>
 <div class="works__list d-flex">
 <div class="works__list__inner">
@@ -326,7 +326,7 @@ $cat_name = $categories[0]->name;
 
 <section class="flow sec bg-info">
 <div class="container">
-<h2 class="ttl__h2"><img class="img-fluid" src="<?php e_img_url(); ?>/h_flow.png" alt="空き家買取の売却までの流れをご紹介します"></h2>
+<h2 class="ttl__h2"><img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_flow_pc.png" alt="空き家買取の売却までの流れをご紹介します"></h2>
 <p class="text-center">空き家になっている背景や、なぜ今売却を検討されているのかや、売却してどうしたいのか、<br>などヒアリングさせて頂き、その後正式に売却まで進めていきます。<br>そんな売却までの流れをご紹介いたします。</p>
 <div class="flow__list d-flex">
 <img class="img-fluid flow__list--border" src="<?php e_img_url(); ?>/flow_border.png" alt="点線">
@@ -440,12 +440,13 @@ $cat_name = $categories[0]->name;
 
 <section class="sec area">
 <div class="container">
-<div class="area__inner d-flex">
+<h2 class="ttl__h2 text-center d-md-none d-block"><img class="img-fluid" src="<?php e_img_url(); ?>/h_area.png" alt="対応エリア"></h2>
+<div class="area__inner d-md-flex">
 <div class="area__inner__img text-center">
 <img class="img-fluid" src="<?php e_img_url(); ?>/area_img.png" alt="地図">
 </div>
 <div class="area__inner__txt">
-<h2 class="ttl__h2 text-center"><img class="img-fluid" src="<?php e_img_url(); ?>/h_area.png" alt="対応エリア"></h2>
+<h2 class="ttl__h2 text-center d-md-block d-none"><img class="img-fluid" src="<?php e_img_url(); ?>/h_area.png" alt="対応エリア"></h2>
 <div class="area__inner__txt__list">
 <p class="m-0">大阪市（⻄区/浪速区/⻄成区/港区/此花区/⻄淀川区/東淀川区/東成区/天王寺区/住吉区/大正区/旭区/福島区/都島区/城東区/生野区/阿倍野区/東住吉区/淀川区/鶴見区/平野区/住之江区/中央区/北区）/ 堺市（中区/東区/⻄区/南区/北区/美原区）/ 豊中市 / 高槻市 / 枚方市 / 東大阪市 / 吹田市 / 茨木市 / 岸和田市 / 寝屋川市 / 八尾市 / 池田市 / 箕面市 / 豊能郡 / 能勢町 / 豊能町 / 摂津市 / 三島郡 / 島本町 / 泉大津市 / 和泉市 / 高石市 / 泉北郡 / 忠岡町 / 貝塚市 / 泉佐野市 / 泉南市 / 阪南市 / 泉南郡 / 熊取町 / 田尻町 / 岬町 / 守口市 / 大東市 / 門真市 / 四條畷市 / 交野市 / 柏原市 / 富田林市 / 河内⻑野市 / 松原市 / 羽曳野市 / 藤井寺市 / 大阪狭山市 / 南河内郡 / 太子町 / 河南町 / 千早赤阪村</p>
 </div>
@@ -459,14 +460,14 @@ $cat_name = $categories[0]->name;
 
 <section class="sec message">
 <div class="container">
-<h2 class="ttl__h2 text-center">
+<h2 class="ttl__h2 text-center px-md-0 px-5">
 <img class="img-fluid" src="<?php e_img_url(); ?>/h_message.png" alt="">
 </h2>
 <div class="row message__inner align-items-center">
-<div class="col-md order-last message__inner__img">
+<div class="col-md order-md-last message__inner__img">
 <img class="img-fluid" src="<?php e_img_url(); ?>/message_img.png" alt="">
 </div>
-<div class="col-md order-first message__inner__txt">
+<div class="col-md order-md-first message__inner__txt">
 <p class="text-white">空き家買取屋さん公式ホームページにご来訪いただきありがとうございます。近年の空き家問題は年々深刻化されています。空き家件数自体増えており、あと数年後には1000万件以上の空き家が出てくると言われております。そんな中、まだ空き家の放置リスクに対する危機感が世間に知られていないと感じております。空き家は放置すると様々なリスクが発生します。一例として「腐敗による悪臭」や「経年劣化による倒壊」「不法侵入」など様々です。そして何より放置することにより近隣への被害は計り知れません。</p>
 <p class="text-white mb-0">一刻も早く空き家をどうするか、各家庭で本気で考えて欲しいと思います。その一つの選択肢に売却があると思いますが、売却といってもすべての物件が売却できるとは限りません。それは市場が決めることです。市場において価値がないと判断されれば待っていても売れません。また空き家というのは手入れをされていないケースがほとんどなので、そういった物件は価値がほとんどなく、最悪の場合、逆に処分費用として請求されるケースも多く発生しています。当社ではそうならないためにお客様に金銭的な負担をさせず、どんな物件でも値段を付けるということをしてきました。その結果、たくさんのお客様の悩みを解決してきました。今後もできる限りどんな物件でも買い取れるよう精進して参りますので、今後とも空き家買取屋さんをどうぞよろしくお願い致します。</p>
 </div>
