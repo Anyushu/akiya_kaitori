@@ -1,3 +1,15 @@
+.kv {
+  h2 {
+    font-size: 0;
+    img {
+      @include media-breakpoint-down(md) {
+        width: auto;
+        height: 30px;
+      }
+    }
+  }
+}
+
 #breadcrumbs {
   padding: 1rem 0;
   background-color: $white;

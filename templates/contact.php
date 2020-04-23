@@ -1,7 +1,7 @@
 <div class="contact">
 <div class="container position-relative">
 <p class="contact__h">
-<img class="img-fluid" src="<?php e_img_url(); ?>/contact_h.png" alt="どんなに些細な事でもお気軽にお問い合わせください。">
+<img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_contact_pc.png" alt="どんなに些細な事でもお気軽にお問い合わせください。">
 </p>
 <div class="contact__link">
 <a href="">

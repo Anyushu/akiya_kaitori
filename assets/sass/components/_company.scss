@@ -5,11 +5,15 @@
     flex-wrap: wrap;
     &__inner {
       width: 24%;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       background-color: $info;
       border-bottom: solid 5px $blue;
       box-sizing: border-box;
       padding: 1rem;
+      @include media-breakpoint-down(md) {
+        width: 49%;
+        margin-bottom: 4%;
+      }
       &--h3 {
         font-size: 1.1rem;
         color: $primary;
@@ -19,6 +23,140 @@
       &--p {
         margin-bottom: 0;
         font-size: $font-size-sm;
+      }
+    }
+  }
+}
+
+.form {
+  &__point {
+    position: relative;
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    margin: 0 auto 3rem;
+    max-width: 980px;
+    @include media-breakpoint-down(md) {
+      padding: 1.5rem;
+    }
+    &--img {
+      position: absolute;
+      right: 2rem;
+      bottom: 0;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    &__txt {
+      max-width: 680px;
+      &--p {
+        font-size: $font-size-sm;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: solid 1px #c8c8c8;
+      }
+      &__tel {
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        a {
+          @include media-breakpoint-down(md) {
+            width: 100%;
+            display: block;
+            text-align: center;
+          }
+        }
+        &--icon {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        &--num {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 3.2rem;
+          font-weight: bold;
+          line-height: 1;
+          @include media-breakpoint-down(md) {
+            font-size: 2rem;
+          }
+        }
+        &--p {
+          margin-left: 1rem;
+          @include media-breakpoint-down(md) {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 5px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wpcf7 {
+  margin-top: 2rem;
+  .table {
+    background-color: $white;
+    th {
+      overflow: hidden;
+      .badge {
+        float: right;
+      }
+    }
+    th,
+    td {
+      vertical-align: top;
+      @include media-breakpoint-down(md) {
+        display: block;
+        width: 100%;
+        border: 0 !important;
+      }
+    }
+    .form-control {
+      background-color: #f0f0f0;
+      border: 0;
+    }
+    .wpcf7-form-control-wrap {
+      display: block;
+      margin: 0;
+      .wpcf7-radio {
+        display: block;
+        margin: 0;
+        .wpcf7-list-item {
+          display: block;
+          margin: 0;
+          label {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .wpcf7-form-control-wrap.acceptance {
+    display: block;
+    text-align: center;
+    background-color: $info;
+    line-height: 1;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    @include media-breakpoint-down(md) {
+      padding: 1rem;
+    }
+    .wpcf7-acceptance {
+      display: block;
+      text-align: center;
+      line-height: 1;
+      .wpcf7-list-item {
+        margin: 0;
+        label {
+          margin: 0;
+          .wpcf7-list-item-label {
+            font-size: $font-size-sm;
+          }
+        }
       }
     }
   }

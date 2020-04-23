@@ -67,6 +67,8 @@
     position: absolute;
     left: -1.5rem;
     bottom: 0;
+    width: 105%;
+    max-width: 105%;
     @include media-breakpoint-down(md) {
       width: 100%;
       left: auto;
@@ -413,6 +415,26 @@
 }
 
 .faq {
+  overflow: hidden;
+  .container {
+    z-index: 1;
+    position: relative;
+    &::before {
+      z-index: -1;
+      content: "？";
+      font-weight: bold;
+      display: inline-block;
+      position: absolute;
+      top: -0.3em;
+      right: -0.3em;
+      font-size: 30rem;
+      line-height: 1;
+      color: rgba($white, 0.5);
+      @include media-breakpoint-down(md) {
+        font-size: 15rem;
+      }
+    }
+  }
   .ttl__h2 {
     img {
       @include media-breakpoint-down(md) {
