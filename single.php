@@ -27,7 +27,7 @@ $permalink = get_the_permalink();
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
-    $i = '';
+    $i = get_template_directory_uri().'/lib/images/no_img.png';
 }
 ?>
 <div class="blogmain__inner__meta">
@@ -49,7 +49,7 @@ if (has_post_thumbnail()) {
 <a class="blogmain__inner__sns__li" href="https://social-plugins.line.me/lineit/share?url=<?php echo $permalink; ?>" target="_blank"><i class="fab fa-line mr-md-1"></i><span>LINE</span></a>
 </div>
 <div class="text-center mt-5">
-<a class="btn btn-primary bg-primary px-5 font-weight-bold" href="<?php e_home_url(); ?>/works/">一覧に戻る</a>
+<a class="btn btn-primary bg-primary px-5 font-weight-bold" href="<?php e_home_url(); ?>/blog/">一覧に戻る</a>
 </div>
 </article>
 <!-- blogmain__inner -->

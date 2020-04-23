@@ -10,7 +10,7 @@
 <header class="header sticky-top">
 
 <h1 class="mb-0 bg-info header--h1">
-<div class="container">大阪の空き家買取なら【空き家買取さん】にお任せください。無料査定・高価買取・売却の相談</div>
+<span class="container d-block">大阪の空き家買取なら【空き家買取さん】にお任せください。無料査定・高価買取・売却の相談</span>
 </h1>
 
 <div class="container position-relative">
