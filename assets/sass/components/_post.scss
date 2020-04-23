@@ -1,0 +1,40 @@
+.post {
+  color: $black;
+  line-height: 1.8;
+  word-break: break-all;
+  p {
+    font-size: $font-size-sm;
+    margin-bottom: 1em;
+  }
+  h2 {
+    font-size: 20px;
+    color: $primary;
+    font-weight: bold;
+    margin-bottom: 1em;
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: text-bottom;
+      box-sizing: border-box;
+      width: 1em;
+      height: 1em;
+      background-color: $info;
+      border: solid 3px $primary;
+      border-radius: 50%;
+      margin-right: 0.5em;
+    }
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    display: inline-block;
+    border-bottom: solid 2px $blue;
+  }
+  h4 {
+    font-size: $font-size-sm;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: $primary;
+  }
+}

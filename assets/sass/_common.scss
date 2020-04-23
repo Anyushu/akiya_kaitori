@@ -81,6 +81,10 @@ mark {
   background-image: url("../images/bg_faq.png");
 }
 
+.bg-cream {
+  background-color: #fff9ea;
+}
+
 .sec {
   padding: 60px 0;
   @include media-breakpoint-down(md) {
@@ -145,5 +149,38 @@ mark {
     @include media-breakpoint-down(md) {
       padding: 1rem;
     }
+  }
+}
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  a,
+  span {
+    display: block;
+    box-sizing: border-box;
+    background-color: $primary;
+    border: solid 2px $primary;
+    border-bottom: solid 3px #19559b;
+    color: $white;
+    width: 60px;
+    height: 60px;
+    line-height: 57px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin: 0 0.3rem;
+    @include media-breakpoint-down(md) {
+      width: 40px;
+      height: 40px;
+      line-height: 37px;
+    }
+  }
+  .current {
+    background-color: $info;
+    border-bottom: solid 3px $primary;
+    color: $primary;
   }
 }

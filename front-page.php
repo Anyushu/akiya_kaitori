@@ -195,114 +195,56 @@ $cat_name = $categories[0]->name;
 <h2 class="ttl__h2 text-center"><img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_works_pc.png" alt="高価買取・即日現金化の実績をご紹介します"></h2>
 <p class="text-center">大阪府下の高価買取実績とこちらに掲載している実績は即日現金化したものを集めたものになります。</p>
 <div class="works__list d-flex">
+<?php
+$args = [
+    'posts_per_page' => 4,
+    'post_type' => 'works',
+    'orderby' => 'date',
+    'order' => 'DESC'
+];
+$posts = get_posts($args);
+foreach ($posts as $post): setup_postdata($post);
+$t = get_the_title();
+$p = get_the_permalink();
+$term = get_the_terms(get_the_ID(), 'area')[0];
+if (has_post_thumbnail()) {
+    $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
+} else {
+    $i = '';
+}
+?>
 <div class="works__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/reason_img_12.png" alt="">
+<a href="<?php echo $p; ?>">
+<?php if ($i !== ''): ?>
+<img class="w-100" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
+<?php endif; ?>
 <div class="works__list__inner__txt">
-<h3 class="works__list__inner__txt--h3">タイトルタイトルタイトル</h3>
+<h3 class="works__list__inner__txt--h3"><?php echo $t; ?></h3>
 <table class="works__list__inner__txt__table">
 <tbody>
 <tr>
 <th>エリア</th>
-<td>ああああ</td>
+<td><?php echo $term->name; ?></td>
 </tr>
 <tr>
 <th>物件面積</th>
-<td>ああああ</td>
+<td><?php the_field('menseki'); ?></td>
 </tr>
 <tr>
 <th>築年数</th>
-<td>ああああ</td>
+<td><?php the_field('age'); ?></td>
 </tr>
 <tr>
 <th>買取額</th>
-<td><span class="works__list__inner__txt__table--price">300</span>万円</td>
+<td><span class="works__list__inner__txt__table--price"><?php the_field('price'); ?></span>万円</td>
 </tr>
 </tbody>
 </table>
 </div>
+</a>
 </div>
 <!-- works__list__inner -->
-<div class="works__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/reason_img_12.png" alt="">
-<div class="works__list__inner__txt">
-<h3 class="works__list__inner__txt--h3">タイトルタイトルタイトル</h3>
-<table class="works__list__inner__txt__table">
-<tbody>
-<tr>
-<th>エリア</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>物件面積</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>築年数</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>買取額</th>
-<td><span class="works__list__inner__txt__table--price">300</span>万円</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- works__list__inner -->
-<div class="works__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/reason_img_12.png" alt="">
-<div class="works__list__inner__txt">
-<h3 class="works__list__inner__txt--h3">タイトルタイトルタイトル</h3>
-<table class="works__list__inner__txt__table">
-<tbody>
-<tr>
-<th>エリア</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>物件面積</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>築年数</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>買取額</th>
-<td><span class="works__list__inner__txt__table--price">300</span>万円</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- works__list__inner -->
-<div class="works__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/reason_img_12.png" alt="">
-<div class="works__list__inner__txt">
-<h3 class="works__list__inner__txt--h3">タイトルタイトルタイトル</h3>
-<table class="works__list__inner__txt__table">
-<tbody>
-<tr>
-<th>エリア</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>物件面積</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>築年数</th>
-<td>ああああ</td>
-</tr>
-<tr>
-<th>買取額</th>
-<td><span class="works__list__inner__txt__table--price">300</span>万円</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- works__list__inner -->
+<?php endforeach; wp_reset_postdata(); ?>
 </div>
 <!-- works__list -->
 <div class="text-center">

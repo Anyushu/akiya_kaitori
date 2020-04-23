@@ -7408,6 +7408,9 @@ mark {
 .bg-square-blue {
   background-image: url("../images/bg_faq.png"); }
 
+.bg-cream {
+  background-color: #fff9ea; }
+
 .sec {
   padding: 60px 0; }
   @media (max-width: 991.98px) {
@@ -7465,6 +7468,37 @@ mark {
   @media (max-width: 991.98px) {
     .table td {
       padding: 1rem; } }
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .wp-pagenavi a,
+  .wp-pagenavi span {
+    display: block;
+    box-sizing: border-box;
+    background-color: #2d82bf;
+    border: solid 2px #2d82bf;
+    border-bottom: solid 3px #19559b;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 57px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin: 0 0.3rem; }
+    @media (max-width: 991.98px) {
+      .wp-pagenavi a,
+      .wp-pagenavi span {
+        width: 40px;
+        height: 40px;
+        line-height: 37px; } }
+  .wp-pagenavi .current {
+    background-color: #ebf5ff;
+    border-bottom: solid 3px #2d82bf;
+    color: #2d82bf; }
 
 .header {
   background-color: #fff; }
@@ -7683,6 +7717,41 @@ mark {
     .to-top {
       width: 10vw;
       height: auto; } }
+
+.post {
+  color: #000;
+  line-height: 1.8;
+  word-break: break-all; }
+  .post p {
+    font-size: 0.875rem;
+    margin-bottom: 1em; }
+  .post h2 {
+    font-size: 20px;
+    color: #2d82bf;
+    font-weight: bold;
+    margin-bottom: 1em; }
+    .post h2::before {
+      content: "";
+      display: inline-block;
+      vertical-align: text-bottom;
+      box-sizing: border-box;
+      width: 1em;
+      height: 1em;
+      background-color: #ebf5ff;
+      border: solid 3px #2d82bf;
+      border-radius: 50%;
+      margin-right: 0.5em; }
+  .post h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    display: inline-block;
+    border-bottom: solid 2px #6eacdc; }
+  .post h4 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #2d82bf; }
 
 .support {
   text-align: center;
@@ -8131,12 +8200,14 @@ mark {
     .message {
       background-image: url("../images/bg_message_sp.png"); } }
 
-.kv h2 {
-  font-size: 0; }
-  @media (max-width: 991.98px) {
-    .kv h2 img {
-      width: auto;
-      height: 30px; } }
+.kv {
+  border-bottom: solid 1px #2d82bf; }
+  .kv h2 {
+    font-size: 0; }
+    @media (max-width: 991.98px) {
+      .kv h2 img {
+        width: auto;
+        height: 30px; } }
 
 #breadcrumbs {
   padding: 1rem 0;
@@ -8274,4 +8345,83 @@ mark {
           margin: 0; }
           .wpcf7 .wpcf7-form-control-wrap.acceptance .wpcf7-acceptance .wpcf7-list-item label .wpcf7-list-item-label {
             font-size: 0.875rem; }
+
+.workspost__inner {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem; }
+  @media (max-width: 991.98px) {
+    .workspost__inner {
+      padding: 2rem 1rem; } }
+  .workspost__inner__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .workspost__inner__info__img {
+      width: 40%; }
+      @media (max-width: 991.98px) {
+        .workspost__inner__info__img {
+          width: 100%;
+          margin-bottom: 1rem; } }
+    .workspost__inner__info__txt {
+      width: 57%; }
+      @media (max-width: 991.98px) {
+        .workspost__inner__info__txt {
+          width: 100%; } }
+      .workspost__inner__info__txt--h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #2d82bf;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: solid 1px #c8c8c8; }
+        @media (max-width: 991.98px) {
+          .workspost__inner__info__txt--h2 {
+            font-size: 1.4rem; } }
+      .workspost__inner__info__txt__table {
+        width: 100%;
+        border-collapse: collapse; }
+        .workspost__inner__info__txt__table th,
+        .workspost__inner__info__txt__table td {
+          font-size: 0.875rem;
+          font-weight: normal;
+          color: #000;
+          box-sizing: border-box;
+          word-break: break-all; }
+        .workspost__inner__info__txt__table th {
+          width: 6em;
+          border-right: dashed 1px #c8c8c8;
+          padding-right: 1rem; }
+        .workspost__inner__info__txt__table td {
+          padding-left: 1rem; }
+        .workspost__inner__info__txt__table--price {
+          font-weight: bold;
+          font-size: 1.2rem; }
+  .workspost__inner__post {
+    margin-top: 2rem; }
+    .workspost__inner__post--h2 {
+      background-color: #2d82bf;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 1.5rem;
+      font-size: 0; }
+      .workspost__inner__post--h2 img {
+        display: inline-block;
+        vertical-align: middle; }
+      .workspost__inner__post--h2 span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 1.3rem;
+        line-height: 1;
+        margin-left: 0.5em;
+        font-weight: bold; }
+    .workspost__inner__post__content {
+      background-color: #ebf5ff;
+      padding: 2rem; }
+      @media (max-width: 991.98px) {
+        .workspost__inner__post__content {
+          padding: 2rem 1rem; } }
 
