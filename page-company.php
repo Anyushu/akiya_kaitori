@@ -60,30 +60,31 @@ if (function_exists('yoast_breadcrumb')) {
 <div class="staff">
 <h3 class="ttl__h3">スタッフ紹介</h3>
 <div class="staff__list d-flex">
+<?php
+$arg = [
+'post_type' => 'staff',
+'posts_per_page' => 4,
+'orderby' => 'date',
+'order' => 'DESC',
+];
+$posts = get_posts($arg);
+foreach ($posts as $post):
+setup_postdata($post);
+$t = get_the_title();
+$content = strip_tags(get_the_content());
+if (has_post_thumbnail()) {
+    $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
+} else {
+    $i = get_template_directory_uri().'/lib/images/no_img.png';
+}
+?>
 <div class="staff__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/flow_img_1.png" alt="">
-<h3 class="staff__list__inner--h3">名前</h3>
-<p class="staff__list__inner--p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<img class="w-100" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
+<h3 class="staff__list__inner--h3"><?php echo $t; ?></h3>
+<p class="staff__list__inner--p"><?php echo $content; ?></p>
 </div>
 <!-- staff__list__inner -->
-<div class="staff__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/flow_img_1.png" alt="">
-<h3 class="staff__list__inner--h3">名前</h3>
-<p class="staff__list__inner--p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-</div>
-<!-- staff__list__inner -->
-<div class="staff__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/flow_img_1.png" alt="">
-<h3 class="staff__list__inner--h3">名前</h3>
-<p class="staff__list__inner--p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-</div>
-<!-- staff__list__inner -->
-<div class="staff__list__inner">
-<img class="w-100" src="<?php e_img_url(); ?>/flow_img_1.png" alt="">
-<h3 class="staff__list__inner--h3">名前</h3>
-<p class="staff__list__inner--p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-</div>
-<!-- staff__list__inner -->
+<?php endforeach; ?>
 </div>
 <!-- staff__list -->
 </div>
@@ -92,7 +93,7 @@ if (function_exists('yoast_breadcrumb')) {
 <!-- container -->
 </section>
 
-<section class="form sec bg-square-blue">
+<section id="form" class="form sec bg-square-blue">
 <div class="container">
 <h2 class="ttl__h2 text-center"><img class="img-fluid" src="<?php e_img_url(); ?>/h_form.png" alt="フォーム"></h2>
 <div class="form__point">

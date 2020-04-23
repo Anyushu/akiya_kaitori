@@ -40,6 +40,24 @@ mark {
       font-weight: bold;
     }
   }
+  &-success {
+    border-radius: 5rem;
+    background-color: $success;
+    border: 0;
+    border-bottom: solid 2px #05a05f;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 1em 2em;
+    text-align: center;
+    &--point {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 0.5em;
+    }
+    &--txt {
+      font-weight: bold;
+    }
+  }
 
   &-outline-primary {
     position: relative;

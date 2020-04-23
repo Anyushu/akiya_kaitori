@@ -38,7 +38,7 @@
 </div>
 
 <div class="header__main__contact">
-<a class="btn btn-primary" href="<?php e_home_url(); ?>">
+<a class="btn btn-primary" href="<?php e_home_url(); ?>/company#form">
 <span class="btn-primary--point">＼ 24時間受付中 ／</span>
 <span class="btn-primary--txt">無料査定・売却相談はこちら</span>
 </a>
@@ -50,10 +50,10 @@
 <nav class="header__nav">
 <ul>
 <li><a href="<?php e_home_url(); ?>">トップページ</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">サービス内容</a></li>
+<li><a href="<?php e_home_url(); ?>#service">サービス内容</a></li>
 <li><a href="<?php e_home_url(); ?>/works/">買取実績</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">サービスの流れ</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">お客様の声</a></li>
+<li><a href="<?php e_home_url(); ?>#flow">サービスの流れ</a></li>
+<li><a href="<?php e_home_url(); ?>/voice/">お客様の声</a></li>
 <li><a href="<?php e_home_url(); ?>/blog/">ブログ</a></li>
 <li><a href="<?php e_home_url(); ?>/company/">会社案内</a></li>
 </ul>
@@ -76,10 +76,10 @@
 <nav class="header__nav__sp__menu">
 <ul class="header__nav__sp__menu--ul">
 <li><a href="<?php e_home_url(); ?>">トップページ</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">サービス内容</a></li>
+<li><a href="<?php e_home_url(); ?>#service">サービス内容</a></li>
 <li><a href="<?php e_home_url(); ?>/works/">買取実績</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">サービスの流れ</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">お客様の声</a></li>
+<li><a href="<?php e_home_url(); ?>#flow">サービスの流れ</a></li>
+<li><a href="<?php e_home_url(); ?>/voice/">お客様の声</a></li>
 <li><a href="<?php e_home_url(); ?>/blog/">ブログ</a></li>
 <li><a href="<?php e_home_url(); ?>/company/">会社案内</a></li>
 </ul>
@@ -91,7 +91,7 @@
 <p class="mb-0 header__main__tel__link--p small text-center mt-2">営業時間：9時〜18時｜定休⽇：水曜日</p>
 </div>
 <div class="text-center pb-4">
-<a class="btn btn-primary" href="<?php e_home_url(); ?>">
+<a class="btn btn-primary" href="<?php e_home_url(); ?>/company#form">
 <span class="btn-primary--point">＼ 24時間受付中 ／</span>
 <span class="btn-primary--txt">無料査定・売却相談はこちら</span>
 </a>

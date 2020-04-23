@@ -56,7 +56,7 @@ $cat_name = $categories[0]->name;
 </a>
 </div>
 <div>
-<a href="#00ff00">
+<a href="<?php e_home_url(); ?>#area">
 <img class="img-fluid img-switch" src="<?php e_img_url(); ?>/btn_area_pc.png" alt="対応エリア">
 </a>
 </div>
@@ -67,7 +67,7 @@ $cat_name = $categories[0]->name;
 </section>
 <!-- blog -->
 
-<section class="sec target bg-info">
+<section id="service" class="sec target bg-info">
 <div class="container">
 <h2 class="ttl__h2 text-center">
 <img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_target_pc.png" alt="このような空き家でも買い取ることが可能です！まずはお気軽にご相談ください！">
@@ -114,7 +114,7 @@ $cat_name = $categories[0]->name;
 </section>
 <!-- target -->
 
-<section class="sec reason bg-square">
+<section id="reason" class="sec reason bg-square">
 <div class="container">
 <h2 class="ttl__h2 text-center">
 <img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_reason_pc.png" alt="選ばれる12の理由">
@@ -258,7 +258,7 @@ if (has_post_thumbnail()) {
 <div class="voice sec">
 <div class="container">
 <div class="text-center">
-<a href="">
+<a href="<?php e_home_url(); ?>/voice/">
 <img class="img-fluid" src="<?php e_img_url(); ?>/bnr_voice.png" alt="お客様のお声">
 </a>
 </div>
@@ -266,7 +266,7 @@ if (has_post_thumbnail()) {
 </div>
 <!-- voice -->
 
-<section class="flow sec bg-info">
+<section id="flow" class="flow sec bg-info">
 <div class="container">
 <h2 class="ttl__h2"><img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_flow_pc.png" alt="空き家買取の売却までの流れをご紹介します"></h2>
 <p class="text-center">空き家になっている背景や、なぜ今売却を検討されているのかや、売却してどうしたいのか、<br>などヒアリングさせて頂き、その後正式に売却まで進めていきます。<br>そんな売却までの流れをご紹介いたします。</p>
@@ -363,16 +363,20 @@ if (has_post_thumbnail()) {
 <dd class="faq__list__inner--dd">はい。当社ではどんな物件でも買い取ることが可能です。<br>まずは無料査定をお申込みください。</dd>
 </dl>
 <dl class="faq__list__inner">
-<dt class="faq__list__inner--dt">ボロボロな家ですが、買い取ってくれますか？</dt>
-<dd class="faq__list__inner--dd">はい。当社ではどんな物件でも買い取ることが可能です。<br>まずは無料査定をお申込みください。</dd>
+<dt class="faq__list__inner--dt">マンションでも買い取れますか？</dt>
+<dd class="faq__list__inner--dd">はい。どんな物件タイプでも買い取ることができます。</dd>
 </dl>
 <dl class="faq__list__inner">
-<dt class="faq__list__inner--dt">ボロボロな家ですが、買い取ってくれますか？</dt>
-<dd class="faq__list__inner--dd">はい。当社ではどんな物件でも買い取ることが可能です。<br>まずは無料査定をお申込みください。</dd>
+<dt class="faq__list__inner--dt">処分費用などは発生しますか？</dt>
+<dd class="faq__list__inner--dd">処分費用は一切発生しませんのでご安心ください。</dd>
 </dl>
 <dl class="faq__list__inner">
-<dt class="faq__list__inner--dt">ボロボロな家ですが、買い取ってくれますか？</dt>
-<dd class="faq__list__inner--dd">はい。当社ではどんな物件でも買い取ることが可能です。<br>まずは無料査定をお申込みください。</dd>
+<dt class="faq__list__inner--dt">最短どれくらいで売却できますか？</dt>
+<dd class="faq__list__inner--dd">物件の状況などあらゆる現状により期間は大幅に変動しますので、まずは無料査定で確認してみてください。</dd>
+</dl>
+<dl class="faq__list__inner">
+<dt class="faq__list__inner--dt">売却するのにこちらの手間はかかりますか？</dt>
+<dd class="faq__list__inner--dd">特にお手間はかかりません。</dd>
 </dl>
 </div>
 </div>
@@ -380,7 +384,7 @@ if (has_post_thumbnail()) {
 </section>
 <!-- faq -->
 
-<section class="sec area">
+<section id="area" class="sec area">
 <div class="container">
 <h2 class="ttl__h2 text-center d-md-none d-block"><img class="img-fluid" src="<?php e_img_url(); ?>/h_area.png" alt="対応エリア"></h2>
 <div class="area__inner d-md-flex">

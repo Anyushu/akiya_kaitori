@@ -1,0 +1,137 @@
+.blogmain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  &__inner {
+    width: 67%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &__meta {
+      margin-bottom: 1rem;
+    }
+    &__ttl {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $primary;
+      margin-bottom: 1em;
+    }
+    &__thumbnail {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    &__sns {
+      margin-top: 2rem;
+      border: solid 1px #c8c8c8;
+      background-color: #fafafa;
+      padding: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: $white;
+        display: block;
+        box-sizing: border-box;
+        border-bottom: solid 2px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 0.5rem;
+        line-height: 1;
+        padding: 1em;
+        width: 32%;
+        @include media-breakpoint-down(md) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
+        span {
+          @include media-breakpoint-down(md) {
+            display: none;
+          }
+        }
+      }
+      &__fb {
+        background-color: #3c5a99;
+        border-bottom-color: #23417d;
+      }
+      &__tw {
+        background-color: #1da1f2;
+        border-bottom-color: #0f8cd7;
+      }
+      &__li {
+        background-color: #00b900;
+        border-bottom-color: #009600;
+      }
+    }
+  }
+  &__side {
+    width: 28%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    &__inner {
+      margin-bottom: 1.5rem;
+      &__contact {
+        overflow: hidden;
+        border-radius: 0.5rem;
+        background: url("../images/bg_side.png") no-repeat center center;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 1rem;
+      }
+      &__cat {
+        overflow: hidden;
+        border-radius: 0.5rem;
+        background-color: $primary;
+        h3 {
+          color: $white;
+          font-size: 1.1rem;
+          font-weight: bold;
+          line-height: 1;
+          padding: 1rem;
+          margin: 0;
+        }
+        &__list {
+          padding: 0;
+          margin: 0;
+          display: block;
+          &--li {
+            list-style: none;
+            display: block;
+            margin: 0;
+            a {
+              position: relative;
+              display: block;
+              box-sizing: border-box;
+              width: 100%;
+              padding: 1rem;
+              color: $black;
+              background-color: $info;
+              border-bottom: solid 1px $blue;
+              &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%) rotate(45deg);
+                display: block;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-top: solid 1px $blue;
+                border-right: solid 1px $blue;
+              }
+            }
+            &:last-child {
+              a {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -65,7 +65,7 @@ if (has_post_thumbnail()) {
 </div>
 <!-- workspost__inner -->
 <div class="text-center mt-5">
-<a class="btn btn-primary bg-primary px-5" href="<?php e_home_url(); ?>/works/">一覧に戻る</a>
+<a class="btn btn-primary bg-primary px-5 font-weight-bold" href="<?php e_home_url(); ?>/works/">一覧に戻る</a>
 </div>
 </div>
 </article>

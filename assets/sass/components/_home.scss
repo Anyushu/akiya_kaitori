@@ -335,7 +335,7 @@
     &--border {
       z-index: -1;
       position: absolute;
-      top: 25%;
+      top: 22%;
       left: 50%;
       transform: translateX(-50%);
       @include media-breakpoint-down(md) {
