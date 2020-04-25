@@ -27,7 +27,7 @@ $permalink = get_the_permalink();
 if (has_post_thumbnail()) {
     $i = get_the_post_thumbnail_url(get_the_ID(), 'large');
 } else {
-    $i = get_template_directory_uri().'/lib/images/no_img.png';
+    $i = '';
 }
 ?>
 <div class="blogmain__inner__meta">
@@ -35,9 +35,11 @@ if (has_post_thumbnail()) {
 <span class="badge badge-sm badge-info"><?php echo $cat_name; ?></span>
 </div>
 <h2 class="blogmain__inner__ttl"><?php echo $t; ?></h2>
+<?php if ($i !== ''): ?>
 <figure class="blogmain__inner__thumbnail">
 <img class="w-100" src="<?php echo $i; ?>" alt="<?php echo $t; ?>">
 </figure>
+<?php endif; ?>
 <div class="post mt-4">
 <?php the_content(); ?>
 </div>

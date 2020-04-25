@@ -5,7 +5,7 @@
 <img class="img-fluid" src="<?php e_img_url(); ?>/h_side_contact.png" alt="空き家売却をお急ぎの方へ">
 </p>
 <p class="text-center">
-<a href="">
+<a href="tel:0120-600-035">
 <img class="img-fluid" src="<?php e_img_url(); ?>/side_tel.png" alt="電話">
 </a>
 </p>

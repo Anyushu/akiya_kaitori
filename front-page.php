@@ -409,8 +409,8 @@ if (has_post_thumbnail()) {
 <h2 class="ttl__h2 text-center px-md-0 px-5">
 <img class="img-fluid" src="<?php e_img_url(); ?>/h_message.png" alt="">
 </h2>
-<div class="row message__inner align-items-center">
-<div class="col-md order-md-last message__inner__img">
+<div class="row message__inner">
+<div class="col-md order-md-last message__inner__img my-md-0 my-n4 mt-md-n4">
 <img class="img-fluid" src="<?php e_img_url(); ?>/message_img.png" alt="">
 </div>
 <div class="col-md order-md-first message__inner__txt">

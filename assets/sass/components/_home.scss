@@ -46,7 +46,7 @@
       top: 1.5rem;
     }
 
-    a {
+    a,span {
       display: block;
       @include media-breakpoint-down(md) {
         flex-wrap: wrap;

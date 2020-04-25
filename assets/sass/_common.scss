@@ -7,6 +7,11 @@ a {
   &:hover {
     text-decoration: none;
   }
+  &[href^="tel:"] {
+    @include media-breakpoint-up(md) {
+      pointer-events: none;
+    }
+  }
 }
 
 p {

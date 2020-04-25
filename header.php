@@ -28,9 +28,9 @@
 </div>
 
 <div class="header__main__tel__link">
-<a class="text-body" href="tel:0120-00-0000">
+<a class="text-body" href="tel:0120-600-035">
 <span class="header__main__tel__link--icon"><img class="img-fluid" src="<?php e_img_url(); ?>/icon_tel.png" alt="電話アイコン"></span>
-<span class="header__main__tel__link--num">0120-00-0000</span>
+<span class="header__main__tel__link--num">0120-600-035</span>
 </a>
 <p class="mb-0 header__main__tel__link--p small text-center mt-2">営業時間：9時〜18時｜定休⽇：水曜日</p>
 </div>
@@ -84,9 +84,9 @@
 <li><a href="<?php e_home_url(); ?>/company/">会社案内</a></li>
 </ul>
 <div class="header__main__tel__link">
-<a class="text-body" href="tel:0120-00-0000">
+<a class="text-body" href="tel:0120-600-035">
 <span class="header__main__tel__link--icon"><img class="img-fluid" src="<?php e_img_url(); ?>/icon_tel.png" alt="電話アイコン"></span>
-<span class="header__main__tel__link--num">0120-00-0000</span>
+<span class="header__main__tel__link--num">0120-600-035</span>
 </a>
 <p class="mb-0 header__main__tel__link--p small text-center mt-2">営業時間：9時〜18時｜定休⽇：水曜日</p>
 </div>

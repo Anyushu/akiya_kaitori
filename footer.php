@@ -2,14 +2,14 @@
 
 <?php get_template_part('templates/contact'); ?>
 
-<footer class="footer sec">
+<footer class="footer">
 <div class="container">
 <div class="row justify-content-between footer__inner">
 <div class="col-md-4 text-md-left text-center">
-<p class="footer__inner__logo"><a href="<?php e_home_url(); ?>"><img class="img-fluid" src="<?php e_img_url(); ?>/head_logo.png" alt="<?php bloginfo('name'); ?>"></a></p>
-<p class="small mb-0 footer__inner__address">〒550-0015
-<br>大阪府大阪市⻄区南堀江3丁目15−22
-<br>TEL 06-6531-9200</p>
+<p class="footer__inner__logo mt-md-3"><a href="<?php e_home_url(); ?>"><img class="img-fluid" src="<?php e_img_url(); ?>/head_logo.png" alt="<?php bloginfo('name'); ?>"></a></p>
+<p class="small mb-0 footer__inner__address">〒546-0042
+<br>大阪市東住吉区西今川三丁目19-6-306
+<br>TEL 0120-600-035</p>
 </div>
 <div class="col-md-6 text-md-left text-center mt-md-0 mt-4">
 <div class="text-center">

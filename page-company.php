@@ -22,20 +22,16 @@ if (function_exists('yoast_breadcrumb')) {
 <td>バリュークリエイト株式会社</td>
 </tr>
 <tr>
-<th>資本金</th>
-<td>ダミーテキスト</td>
-</tr>
-<tr>
 <th>代表者</th>
-<td>ダミーテキスト</td>
+<td>金子 憲太郎</td>
 </tr>
 <tr>
 <th>所在地</th>
-<td>〒550-0015　大阪府大阪市⻄区南堀江3丁目15−22</td>
+<td>〒546-0042 大阪市東住吉区西今川三丁目19-6-306</td>
 </tr>
 <tr>
 <th>電話番号</th>
-<td>06-6531-9200</td>
+<td>0120-600-035</td>
 </tr>
 </tbody>
 </table>
@@ -46,12 +42,12 @@ if (function_exists('yoast_breadcrumb')) {
 <div class="row">
 <div class="col-md">
 <div class="embed-responsive embed-responsive-4by3">
-<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3425851473253!2d135.48527091473363!3d34.671302192300764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7a9d57b52e1%3A0xff92be66de9ffe68!2z44CSNTUwLTAwMTUg5aSn6Ziq5bqc5aSn6Ziq5biC6KW_5Yy65Y2X5aCA5rGf77yT5LiB55uu77yR77yV4oiS77yS77yS!5e0!3m2!1sja!2sjp!4v1587545912098!5m2!1sja!2sjp"></iframe>
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.1776776817865!2d135.53166731473243!3d34.624949994780245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000de863c7676f1%3A0x9e088fe6414d01ef!2z44CSNTQ2LTAwNDIg5aSn6Ziq5bqc5aSn6Ziq5biC5p2x5L2P5ZCJ5Yy66KW_5LuK5bed77yT5LiB55uu77yR77yZ4oiS77yW!5e0!3m2!1sja!2sjp!4v1587801370667!5m2!1sja!2sjp"></iframe>
 </div>
 </div>
 <div class="col-md mt-md-0 mt-3">
 <div class="embed-responsive embed-responsive-4by3">
-<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!4v1587546004868!6m8!1m7!1sb25t9DQsdCV22_5mnpxlBg!2m2!1d34.67137900684231!2d135.4877028398966!3f18.64189033003348!4f27.31697009271531!5f0.7820865974627469"></iframe>
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!4v1587801496693!6m8!1m7!1sH26HlvBUGMC3XmXZQ1OOZw!2m2!1d34.62501744648476!2d135.5339732718086!3f230.04235086624868!4f23.519236204348942!5f0.7820865974627469"></iframe>
 </div>
 </div>
 </div>
@@ -102,9 +98,9 @@ if (has_post_thumbnail()) {
 <p class="form__point__txt--p">お急ぎのお客様へ、お電話でのお問い合わせも受け付けております。
 <br>「<mark>空き家買取屋さんのホームページを見た</mark>」の一言でお気軽にご相談下さい。</p>
 <div class="form__point__txt__tel">
-<a class="text-body" href="tel:0120-00-0000">
+<a class="text-body" href="tel:0120-600-035">
 <span class="form__point__txt__tel--icon"><img class="img-fluid" src="<?php e_img_url(); ?>/icon_tel_form.png" alt="電話アイコン"></span>
-<span class="form__point__txt__tel--num">0120-00-0000</span>
+<span class="form__point__txt__tel--num">0120-600-035</span>
 </a>
 <p class="mb-0 form__point__txt__tel--p">営業時間：9時〜18時｜定休⽇：水曜日</p>
 </div>
