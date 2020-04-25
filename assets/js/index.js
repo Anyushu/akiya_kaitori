@@ -4,10 +4,7 @@ import "../sass/app.scss";
 // JSインポート
 import "bootstrap";
 import "slick-carousel";
-FontAwesomeConfig = {
-  searchPseudoElements: true,
-};
-import "@fortawesome/fontawesome-free/js/all.js";
+// import "@fortawesome/fontawesome-free/js/all.js";
 
 $(function ($) {
   let w = $(window).width();

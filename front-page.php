@@ -406,12 +406,10 @@ if (has_post_thumbnail()) {
 
 <section class="sec message">
 <div class="container">
-<h2 class="ttl__h2 text-center px-md-0 px-5">
-<img class="img-fluid" src="<?php e_img_url(); ?>/h_message.png" alt="">
-</h2>
+<h2 class="ttl__h2 text-center px-md-0 px-5"><img class="img-fluid" src="<?php e_img_url(); ?>/h_message.png" alt="メッセージ"></h2>
 <div class="row message__inner">
 <div class="col-md order-md-last message__inner__img my-md-0 my-n4 mt-md-n4">
-<img class="img-fluid" src="<?php e_img_url(); ?>/message_img.png" alt="">
+<img class="img-fluid" src="<?php e_img_url(); ?>/message_img.png" alt="空き家買取屋さん公式ホームページにご来訪いただきありがとうございます">
 </div>
 <div class="col-md order-md-first message__inner__txt">
 <p class="text-white">空き家買取屋さん公式ホームページにご来訪いただきありがとうございます。近年の空き家問題は年々深刻化されています。空き家件数自体増えており、あと数年後には1000万件以上の空き家が出てくると言われております。そんな中、まだ空き家の放置リスクに対する危機感が世間に知られていないと感じております。空き家は放置すると様々なリスクが発生します。一例として「腐敗による悪臭」や「経年劣化による倒壊」「不法侵入」など様々です。そして何より放置することにより近隣への被害は計り知れません。</p>
