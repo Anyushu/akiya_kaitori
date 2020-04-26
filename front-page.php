@@ -270,8 +270,9 @@ if (has_post_thumbnail()) {
 <div class="container">
 <h2 class="ttl__h2"><img class="img-fluid img-switch" src="<?php e_img_url(); ?>/h_flow_pc.png" alt="空き家買取の売却までの流れをご紹介します"></h2>
 <p class="text-center">空き家になっている背景や、なぜ今売却を検討されているのかや、売却してどうしたいのか、<br>などヒアリングさせて頂き、その後正式に売却まで進めていきます。<br>そんな売却までの流れをご紹介いたします。</p>
-<div class="flow__list d-flex">
+<div class="position-relative">
 <img class="img-fluid flow__list--border" src="<?php e_img_url(); ?>/flow_border.png" alt="点線">
+<div class="flow__list d-flex">
 <div class="flow__list__inner">
 <img class="w-100" src="<?php e_img_url(); ?>/flow_img_1.png" alt="お問い合わせ">
 <div class="flow__list__inner__txt">
@@ -346,6 +347,7 @@ if (has_post_thumbnail()) {
 <!-- flow__list__inner -->
 </div>
 <!-- flow__list -->
+</div>
 </div>
 <!-- container -->
 </section>
