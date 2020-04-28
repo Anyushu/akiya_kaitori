@@ -76,13 +76,13 @@
 <!-- header__nav__sp__toggle -->
 <nav class="header__nav__sp__menu">
 <ul class="header__nav__sp__menu--ul">
-<li><a href="<?php e_home_url(); ?>">トップページ</a></li>
-<li><a href="<?php e_home_url(); ?>#service">サービス内容</a></li>
-<li><a href="<?php e_home_url(); ?>/works/">買取実績</a></li>
-<li><a href="<?php e_home_url(); ?>#flow">サービスの流れ</a></li>
-<li><a href="<?php e_home_url(); ?>/voice/">お客様の声</a></li>
-<li><a href="<?php e_home_url(); ?>/blog/">ブログ</a></li>
-<li><a href="<?php e_home_url(); ?>/company/">会社案内</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>">トップページ</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>#service">サービス内容</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>/works/">買取実績</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>#flow">サービスの流れ</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>/voice/">お客様の声</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>/blog/">ブログ</a></li>
+<li><a class="header__nav__sp__menu--link" href="<?php e_home_url(); ?>/company/">会社案内</a></li>
 </ul>
 <div class="header__main__tel__link">
 <a class="text-body" href="tel:0120-600-035">
