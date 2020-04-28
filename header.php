@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- ヘッダー -->
-<header class="header sticky-top">
+<header class="header">
 
 <h1 class="mb-0 bg-info header--h1">
 <span class="container d-block">大阪の空き家買取なら【空き家買取さん】にお任せください。無料査定・高価買取・売却の相談</span>
